@@ -1,0 +1,95 @@
+body{
+  background-color: cornflowerblue;
+}
+
+.container{
+  background-color: aliceblue;
+  width:400px;
+  height:300px;
+  position:absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%);
+  padding:50px;
+  border-radius: 20%;
+  text-align: center;
+  
+
+}
+
+.container h2{
+  font-size: 45px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container h2::after{
+  content:'';
+  width:70px;
+  height:3px;
+  border-radius: 3px;
+  background-color: aqua;
+  position: absolute;
+  bottom:-10px;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.container blockquote{
+  font-size: 20px;
+  min-height: 110px;
+}
+
+.quote-box blockquote::before,.quote-box blockquote::after{
+  content:'"';
+}
+
+.container span{
+  display:block;
+  margin-top:10px;
+  float:right;
+  position: relative;
+  bottom: 40px
+}
+
+.container span::before{
+  content:'';
+  width:70px;
+  height:3px;
+  border-radius: 3px;
+  background-color:cornflowerblue;
+  position: absolute;
+  bottom:-10px;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+
+}
+
+.bottun_cantainer{
+  display:flex;
+  margin-left: 25%;
+}
+button{
+  margin-right: 30px;
+ background-color: rgb(23, 124, 229);
+ color:aliceblue;
+ border-radius: 10%;
+ border: 1px solid;
+ width:200px;
+ height:50px;
+ align-items: center;
+ margin-left: 5px;
+  
+}
+button img{
+  width:18px;
+  height:18px;
+  margin-right: 5px;
+
+}
+
+button:nth-child(2){
+  background: transparent;
+  color: #333;
+}
+
